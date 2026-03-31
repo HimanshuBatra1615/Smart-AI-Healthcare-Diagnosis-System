@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+sqlalchemy
+psycopg2-binary
+asyncpg
+passlib[bcrypt]
+bcrypt==3.2.2
+python-jose[cryptography]
+scikit-learn
+xgboost
+pandas
+numpy
+websockets
+python-dotenv
+python-multipart
