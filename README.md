@@ -48,7 +48,7 @@ The intuitive, animated interface ensures a seamless user experience, while the 
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/healthcare-system.git
+git clone https://github.com/HimanshuBatra1615/healthcare-system.git
 cd healthcare-system
 ```
 
