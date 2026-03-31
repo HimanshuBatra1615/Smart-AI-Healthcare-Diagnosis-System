@@ -4,7 +4,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
   Activity, Send, Mic, X, AlertTriangle, 
-  ChevronRight, CheckCircle, Clock, Thermometer, Loader2, FileText, LogOut, UserCircle 
+  ChevronRight, CheckCircle, Clock, Thermometer, Loader2, FileText, LogOut 
 } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";

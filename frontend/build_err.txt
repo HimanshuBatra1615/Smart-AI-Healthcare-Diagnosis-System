@@ -1,0 +1,26 @@
+
+> frontend@0.1.0 build
+> next build
+
+▲ Next.js 16.2.1 (Turbopack)
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 6.3s
+  Running TypeScript ...
+  Finished TypeScript in 6.2s ...
+  Collecting page data using 9 workers ...
+  Generating static pages using 9 workers (0/8) ...
+⨯ useSearchParams() should be wrapped in a suspense boundary at page "/result". Read more: https://nextjs.org/docs/messages/missing-suspense-with-csr-bailout
+    at S (D:\HealthCare System\frontend\.next\server\chunks\ssr\node_modules_next_0w2y7fz._.js:2:2692)
+    at r (D:\HealthCare System\frontend\.next\server\chunks\ssr\node_modules_next_0w2y7fz._.js:4:6760)
+    at D:\HealthCare System\frontend\.next\server\chunks\ssr\_0yk4jxn._.js:1:2283
+    at an (D:\HealthCare System\frontend\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.prod.js:2:84267)
+    at ai (D:\HealthCare System\frontend\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.prod.js:2:86086)
+    at al (D:\HealthCare System\frontend\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.prod.js:2:107860)
+    at ao (D:\HealthCare System\frontend\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.prod.js:2:105275)
+    at aa (D:\HealthCare System\frontend\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.prod.js:2:84619)
+    at ai (D:\HealthCare System\frontend\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.prod.js:2:86135)
+    at ai (D:\HealthCare System\frontend\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.prod.js:2:104615)
+Error occurred prerendering page "/result". Read more: https://nextjs.org/docs/messages/prerender-error
+Export encountered an error on /result/page: /result, exiting the build.
+⨯ Next.js build worker exited with code: 1 and signal: null

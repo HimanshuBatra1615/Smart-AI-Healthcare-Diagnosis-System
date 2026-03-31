@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { 
@@ -17,7 +17,7 @@ interface PredictionData {
   feature_importance: Record<string, number>;
 }
 
-export default function ResultPage() {
+function ResultContent() {
   const searchParams = useSearchParams();
   const idQuery = searchParams.get('id');
   
@@ -226,5 +226,20 @@ export default function ResultPage() {
       </div>
 
     </div>
+  );
+}
+
+export default function ResultPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-[#0a0a0f] flex items-center justify-center text-white">
+        <div className="animate-pulse flex items-center space-x-2">
+          <div className="w-8 h-8 border-4 border-teal-500 border-t-transparent rounded-full animate-spin"></div>
+          <span className="font-medium text-gray-400">Loading Analysis...</span>
+        </div>
+      </div>
+    }>
+      <ResultContent />
+    </Suspense>
   );
 }
